@@ -32,7 +32,7 @@ void DataWriteLoop(CSVHandler &csv, PineTimeCommunicator &communicator, bool &ca
             std::to_string(communicator.GetBatteryLevelValue())
         };
         csv.AppendCSVLine(file_name, data_line);
-        std::this_thread::sleep_for(std::chrono::seconds(loop_delay));
+        std::this_thread::sleep_for(std::chrono::milliseconds(loop_delay));
     }
 }
 
@@ -42,9 +42,9 @@ int main(int argc, char** argv)
     if (argc > 1)
         file_name = argv[1];
 
-    int data_write_loop_delay = 1;
+    int data_write_loop_delay = 1000;
     if (argc > 2)
-        data_write_loop_delay = argv[2][0] - '0';
+        data_write_loop_delay = std::atoi(argv[2]);
 
     PineTimeCommunicator communicator;
     if (1 == communicator.ConnectToPineTime())
