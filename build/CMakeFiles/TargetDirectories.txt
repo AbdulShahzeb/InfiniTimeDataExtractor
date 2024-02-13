@@ -1,0 +1,12 @@
+C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/extracting_values_test.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/data_extractor.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/INSTALL.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/ALL_BUILD.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/ZERO_CHECK.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/simpleble/CMakeFiles/simpleble.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/simpleble/CMakeFiles/simpleble-c.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/simpleble/CMakeFiles/INSTALL.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/simpleble/CMakeFiles/ALL_BUILD.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-build/CMakeFiles/fmt.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-build/CMakeFiles/INSTALL.dir
+C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-build/CMakeFiles/ALL_BUILD.dir

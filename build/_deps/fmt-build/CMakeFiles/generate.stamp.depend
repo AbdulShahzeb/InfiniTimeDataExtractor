@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-src/CMakeLists.txt
+C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-src/support/cmake/JoinPaths.cmake
+C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-src/support/cmake/cxx14.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.25/Modules/GNUInstallDirs.cmake

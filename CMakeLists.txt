@@ -7,7 +7,7 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 set (CMAKE_BUILD_TYPE Debug)
 
 #include SimpleBLE
-add_subdirectory(lib/SimpleBLE/simpleble ${CMAKE_BINARY_DIR}/simpleble)
+add_subdirectory("C:/ACFR/Code/SimpleBLE/simpleble" ${CMAKE_BINARY_DIR}/simpleble)
 
 #include Threads
 find_package(Threads REQUIRED)

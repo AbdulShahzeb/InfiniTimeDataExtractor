@@ -1,6 +1,8 @@
 #include "pinetime_communicator.hpp"
 #include "csv_handler.hpp"
 
+#include <ctime>
+#include <iomanip>
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -13,10 +15,16 @@ void DataWriteLoop(CSVHandler &csv, PineTimeCommunicator &communicator, bool &ca
     {
         std::time_t current_time = std::chrono::system_clock::to_time_t(
             std::chrono::system_clock::now());
+        std::stringstream ss;
+        ss << std::put_time(std::localtime(&current_time), "%H:%M:%S");
+        std::string time = ss.str();
         std::array<int16_t, 3> motion_values = communicator.GetMotionValues();
+        for (int i = 0; i < motion_values.size(); ++i) {
+            motion_values[i] = static_cast<int16_t>(std::floor(motion_values[i] / 9.81));
+        }
 
         std::vector<std::string> data_line {
-            std::to_string(current_time),
+            time,
             std::to_string(communicator.GetHeartRateValue()),
             std::to_string(motion_values[0]),
             std::to_string(motion_values[1]),
@@ -30,7 +38,7 @@ void DataWriteLoop(CSVHandler &csv, PineTimeCommunicator &communicator, bool &ca
 
 int main(int argc, char** argv)
 {
-    std::string file_name = "data.csv";
+    std::string file_name = "../data.csv";
     if (argc > 1)
         file_name = argv[1];
 
@@ -41,9 +49,10 @@ int main(int argc, char** argv)
     PineTimeCommunicator communicator;
     if (1 == communicator.ConnectToPineTime())
       return 1;
-    std::cout << "Connected to PineTime!\nData is now being written (to exit write 'quit')...\n>> ";
+    std::cout << "Connected to PineTime!\nData is now being written (to exit write 'q')...\n>> ";
 
     CSVHandler csv;
+    csv.clear(file_name);
     std::vector<std::string> first_line {"Time", "Heartrate", "MotionX", "MotionY", "MotionZ", "Battery Level"};
     csv.AppendCSVLine(file_name, first_line);
     
@@ -55,10 +64,10 @@ int main(int argc, char** argv)
         std::string command;
         std::cin >> command;
 
-        if ("quit" == command)
+        if ("q" == command)
             break;
         else
-            std::cout << "Invalid Command. Write 'quit' to exit program.\n>> ";
+            std::cout << "Invalid Command. Write 'q' to exit program.\n>> ";
     }
 
     can_run = false;

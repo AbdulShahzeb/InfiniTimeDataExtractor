@@ -1,0 +1,10 @@
+^C:\ACFR\CODE\INFINITIMEDATAEXTRACTOR\BUILD\_DEPS\FMT-SUBBUILD\CMAKEFILES\12672B83A4DC1164F13C8F6718068A84\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild -BC:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/fmt-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

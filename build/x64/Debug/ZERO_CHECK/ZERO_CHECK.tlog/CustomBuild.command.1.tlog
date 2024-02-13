@@ -1,0 +1,10 @@
+^C:\ACFR\CODE\INFINITIMEDATAEXTRACTOR\BUILD\CMAKEFILES\5A9ADDC54762403BE38C74CFA90CE97B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/ACFR/Code/InfiniTimeDataExtractor -BC:/ACFR/Code/InfiniTimeDataExtractor/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/ACFR/Code/InfiniTimeDataExtractor/build/InfinitimeDataExtractor.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

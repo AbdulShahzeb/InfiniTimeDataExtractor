@@ -10,4 +10,5 @@ public:
     ~CSVHandler();
 
     void AppendCSVLine(std::string file_name, std::vector<std::string> line_content);
+    void clear(std::string file_name);
 };

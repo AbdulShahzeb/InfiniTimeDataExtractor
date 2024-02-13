@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\ACFR\Code\InfiniTimeDataExtractor\build\_deps\fmt-subbuild\CMakeFiles\12672b83a4dc1164f13c8f6718068a84\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{122B51F1-6FEF-3AA2-B871-13B1F89AA97C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

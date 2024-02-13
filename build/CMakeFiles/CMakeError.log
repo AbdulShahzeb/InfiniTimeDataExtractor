@@ -1,0 +1,486 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-cqp3cj
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_04fb2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04fb2.dir\Debug\\" /Fd"cmTC_04fb2.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-cqp3cj\src.c"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-cqp3cj\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-cqp3cj\cmTC_04fb2.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-jv1tvz
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7f459.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f459.dir\Debug\\" /Fd"cmTC_7f459.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-jv1tvz\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-jv1tvz\cmTC_7f459.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-ncsmj4
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7eaf9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7eaf9.dir\Debug\\" /Fd"cmTC_7eaf9.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-ncsmj4\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-ncsmj4\cmTC_7eaf9.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-7k10sf
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_cf5a5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_cf5a5.dir\Debug\\" /Fd"cmTC_cf5a5.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\cmTC_cf5a5.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\cmTC_cf5a5.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx(1,33): error C2062: type 'int' unexpected [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\cmTC_cf5a5.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\cmTC_cf5a5.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\cmTC_cf5a5.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-7k10sf\cmTC_cf5a5.vcxproj]
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-tcs38w
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7ce50.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_7ce50.dir\Debug\\" /Fd"cmTC_7ce50.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\cmTC_7ce50.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\cmTC_7ce50.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx(1,33): error C2062: type 'int' unexpected [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\cmTC_7ce50.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\cmTC_7ce50.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\cmTC_7ce50.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tcs38w\cmTC_7ce50.vcxproj]
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-t65s64
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_56edf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56edf.dir\Debug\\" /Fd"cmTC_56edf.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-t65s64\src.c"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-t65s64\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-t65s64\cmTC_56edf.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-gnqj5y
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4e982.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4e982.dir\Debug\\" /Fd"cmTC_4e982.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-gnqj5y\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-gnqj5y\cmTC_4e982.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-hw2rsh
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d1c1d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d1c1d.dir\Debug\\" /Fd"cmTC_d1c1d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-hw2rsh\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-hw2rsh\cmTC_d1c1d.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-2wb6zl
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_acbdd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_acbdd.dir\Debug\\" /Fd"cmTC_acbdd.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\cmTC_acbdd.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\cmTC_acbdd.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx(1,33): error C2062: type 'int' unexpected [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\cmTC_acbdd.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\cmTC_acbdd.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\cmTC_acbdd.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-2wb6zl\cmTC_acbdd.vcxproj]
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-oec8ux
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_11b2a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_11b2a.dir\Debug\\" /Fd"cmTC_11b2a.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-oec8ux\src.c"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-oec8ux\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-oec8ux\cmTC_11b2a.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-wgd88x
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3220f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3220f.dir\Debug\\" /Fd"cmTC_3220f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-wgd88x\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-wgd88x\cmTC_3220f.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-e88tum
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ac89e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ac89e.dir\Debug\\" /Fd"cmTC_ac89e.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-e88tum\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-e88tum\cmTC_ac89e.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-4f2q8y
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ed99f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_ed99f.dir\Debug\\" /Fd"cmTC_ed99f.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\cmTC_ed99f.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\cmTC_ed99f.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx(1,33): error C2062: type 'int' unexpected [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\cmTC_ed99f.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\cmTC_ed99f.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\cmTC_ed99f.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-4f2q8y\cmTC_ed99f.vcxproj]
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-avsiii
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_33b17.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_33b17.dir\Debug\\" /Fd"cmTC_33b17.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-avsiii\src.c"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-avsiii\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-avsiii\cmTC_33b17.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-nml9xp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_34b81.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_34b81.dir\Debug\\" /Fd"cmTC_34b81.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-nml9xp\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-nml9xp\cmTC_34b81.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-0ee2se
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4c346.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4c346.dir\Debug\\" /Fd"cmTC_4c346.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-0ee2se\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-0ee2se\cmTC_4c346.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-14de0b
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_848bf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_848bf.dir\Debug\\" /Fd"cmTC_848bf.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\cmTC_848bf.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\cmTC_848bf.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx(1,33): error C2062: type 'int' unexpected [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\cmTC_848bf.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\cmTC_848bf.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\cmTC_848bf.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-14de0b\cmTC_848bf.vcxproj]
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-s97029
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_da0a3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_da0a3.dir\Debug\\" /Fd"cmTC_da0a3.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-s97029\src.c"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-s97029\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-s97029\cmTC_da0a3.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-26b1ek
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_52006.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52006.dir\Debug\\" /Fd"cmTC_52006.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-26b1ek\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-26b1ek\cmTC_52006.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-c02der
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a6aa3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a6aa3.dir\Debug\\" /Fd"cmTC_a6aa3.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-c02der\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-c02der\cmTC_a6aa3.vcxproj]
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_DEPRECATED_ATTR failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-v616q1
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_283f3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.cxx
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_283f3.dir\Debug\\" /Fd"cmTC_283f3.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\cmTC_283f3.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx(1,31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\cmTC_283f3.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx(1,33): error C2062: type 'int' unexpected [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\cmTC_283f3.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\cmTC_283f3.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\cmTC_283f3.vcxproj]
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-v616q1\cmTC_283f3.vcxproj]
+
+
+Source file was:
+__attribute__((__deprecated__)) int somefunc() { return 0; }
+    int main() { return somefunc();}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-lr024j
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_db14c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  src.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_db14c.dir\Debug\\" /Fd"cmTC_db14c.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-lr024j\src.c"
+C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-lr024j\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-lr024j\cmTC_db14c.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-18lf4r
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_63f17.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63f17.dir\Debug\\" /Fd"cmTC_63f17.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-18lf4r\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-18lf4r\cmTC_63f17.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/ACFR/Code/InfiniTimeDataExtractor/build/CMakeFiles/CMakeScratch/TryCompile-tylizk
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1dc5f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32825 for x64
+  CheckFunctionExists.c
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1dc5f.dir\Debug\\" /Fd"cmTC_1dc5f.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tylizk\CheckFunctionExists.c"
+LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\ACFR\Code\InfiniTimeDataExtractor\build\CMakeFiles\CMakeScratch\TryCompile-tylizk\cmTC_1dc5f.vcxproj]
+
+
+

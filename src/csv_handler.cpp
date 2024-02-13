@@ -25,3 +25,10 @@ void CSVHandler::AppendCSVLine(std::string file_name, std::vector<std::string> l
 
     csv_file.close();
 }
+
+
+void CSVHandler::clear(std::string file_name)
+{
+    std::ofstream csv_file(file_name, std::ios::trunc);
+    csv_file.close();
+}

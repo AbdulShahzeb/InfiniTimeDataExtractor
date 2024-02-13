@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\base\Adapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\base\Peripheral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\base\Service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\base\Characteristic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\base\Descriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\backends\common\ServiceBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\backends\common\CharacteristicBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\backends\common\DescriptorBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\Exceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\Logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\safe\AdapterSafe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\frontends\safe\PeripheralSafe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\builders\AdapterBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\builders\PeripheralBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\builders\ServiceBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\builders\CharacteristicBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\builders\DescriptorBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\backends\windows\AdapterBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\backends\windows\PeripheralBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\ACFR\Code\SimpleBLE\simpleble\src\backends\windows\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\ACFR\Code\SimpleBLE\simpleble\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E542EF79-124C-3C53-B59A-5CFF24EA6EDE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

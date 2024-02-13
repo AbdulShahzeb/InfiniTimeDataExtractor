@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/fmt-populate"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/12672b83a4dc1164f13c8f6718068a84/fmt-populate.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/21c79300efc75e83f280bb007975be49/fmt-populate-complete.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-build.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-configure.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-download.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-install.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-patch.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-test.rule"
+		},
+		{
+			"file" : "C:/ACFR/Code/InfiniTimeDataExtractor/build/_deps/fmt-subbuild/CMakeFiles/23dd39604d1123842d1570234047b853/fmt-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fmt-populate"
+		],
+		"name" : "fmt-populate"
+	}
+}
